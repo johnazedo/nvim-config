@@ -182,7 +182,6 @@ return {
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
 
-  -- add any tools you want to have installed below
   {
     "williamboman/mason.nvim",
     opts = {
@@ -191,6 +190,14 @@ return {
         "shellcheck",
         "shfmt",
         "flake8",
+        "clangd",
+        "clang-format",
+        "cpplint",
+        "cpptools",
+        "pylint",
+        "pyright",
+        "debugpy",
+        "black",
       },
     },
   },
